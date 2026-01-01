@@ -1,19 +1,195 @@
-<center>
-<p>&nbsp;</p>
-<figure class="image"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/fastfood.45665555.jpg" width="800" height="200" /></figure>
-<figure class="image"><a href="https://web.aw.ca/en/our-menu" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/a.w.3454546465.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.burgerking.ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/burgerking.3454545645645.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.chick-fil-a.ca/en" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/CHICK-FIL-A.345678978787.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.dominos.ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/dominos.3433545.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.kfc.ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/KFC.346575646546.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://littlecaesars.ca/en-ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/LITTLE%20CAESARS.234567898778787.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.mcdonalds.com/ca/en-ca.html" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/mcdonalds.3454545.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.pizzahut.ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/pizzahut.345454656.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.popeyeschicken.ca/?lang=en" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/popeyes.34565434343.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.starbucks.ca/menu" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/starbucks.346575643e.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.subway.com/en-ca/" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/subway.3544545.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.tacobell.ca/en/menu" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/tacobell.343545.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.timhortons.ca/?lang=en" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/timhortons.35454545.jpg" width="800" height="200" /></a></figure>
-<figure class="image"><a href="https://www.wendys.com/en-ca" target="_blank" rel="noopener noreferrer"><img style="aspect-ratio: 900/225;" src="https://uploads.onecompiler.io/43a28xmes/3wxcpbe5b/wendys.23433534.jpg" width="800" height="200" /></a></figure>
-<p>&nbsp;</p>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Picker</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    background: #161b22;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 10px;
+}
+
+.crypto-card {
+    background: #161b22;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.crypto-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.crypto-price {
+    font-size: 1.1rem;
+}
+
+.signal {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.buy { color: #00ff9c; }
+.sell { color: #ff4d4d; }
+.hold { color: #4da3ff; }
+
+canvas {
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>📊 Crypto Picker</header>
+
+<div class="container" id="cryptoList"></div>
+
+<script>
+const cryptos = [
+    { name: "Bitcoin", symbol: "btcusdt" },
+    { name: "Ethereum", symbol: "ethusdt" },
+    { name: "BNB", symbol: "bnbusdt" },
+    { name: "Solana", symbol: "solusdt" },
+    { name: "XRP", symbol: "xrpusdt" },
+    { name: "Cardano", symbol: "adausdt" },
+    { name: "Dogecoin", symbol: "dogeusdt" },
+    { name: "Polygon", symbol: "maticusdt" },
+    { name: "Polkadot", symbol: "dotusdt" },
+    { name: "Avalanche", symbol: "avaxusdt" }
+];
+
+const priceHistory = {};
+const prices = {};
+const list = document.getElementById("cryptoList");
+
+// Create UI
+cryptos.forEach(c => {
+    priceHistory[c.symbol] = [];
+
+    const card = document.createElement("div");
+    card.className = "crypto-card";
+    card.id = c.symbol;
+
+    card.innerHTML = `
+        <div class="crypto-top">
+            <div class="crypto-name">${c.name}</div>
+            <div class="crypto-price">$0.00</div>
+        </div>
+        <div class="signal hold">🔵 HOLD</div>
+        <canvas width="300" height="60"></canvas>
+    `;
+    list.appendChild(card);
+});
+
+// SMA calculation
+function SMA(data, period) {
+    if (data.length < period) return null;
+    const slice = data.slice(-period);
+    return slice.reduce((a,b) => a + b, 0) / period;
+}
+
+// Draw mini chart
+function drawChart(canvas, data) {
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.beginPath();
+    ctx.strokeStyle = "#00ff9c";
+    ctx.lineWidth = 2;
+
+    const max = Math.max(...data);
+    const min = Math.min(...data);
+
+    data.forEach((p, i) => {
+        const x = (i / data.length) * canvas.width;
+        const y = canvas.height - ((p - min) / (max - min || 1)) * canvas.height;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+
+    ctx.stroke();
+}
+
+// Binance WebSocket
+const streams = cryptos.map(c => `${c.symbol}@trade`).join("/");
+const socket = new WebSocket(`wss://stream.binance.com:9443/stream?streams=${streams}`);
+
+socket.onmessage = (event) => {
+    const data = JSON.parse(event.data).data;
+    const symbol = data.s.toLowerCase();
+    const price = parseFloat(data.p);
+
+    const card = document.getElementById(symbol);
+    if (!card) return;
+
+    const priceEl = card.querySelector(".crypto-price");
+    const signalEl = card.querySelector(".signal");
+    const canvas = card.querySelector("canvas");
+
+    priceEl.textContent = `$${price.toFixed(2)}`;
+
+    // Store price history
+    priceHistory[symbol].push(price);
+    if (priceHistory[symbol].length > 40) {
+        priceHistory[symbol].shift();
+    }
+
+    // SMA Logic
+    const sma10 = SMA(priceHistory[symbol], 10);
+    const sma30 = SMA(priceHistory[symbol], 30);
+
+    if (sma10 && sma30) {
+        if (sma10 > sma30) {
+            signalEl.textContent = "🟢 BUY";
+            signalEl.className = "signal buy";
+        } else {
+            signalEl.textContent = "🔴 SELL";
+            signalEl.className = "signal sell";
+        }
+    }
+
+    drawChart(canvas, priceHistory[symbol]);
+};
+
+socket.onclose = () => {
+    console.log("WebSocket disconnected");
+};
+</script>
+
+  <header>Tapfone</header>
+</body>
+</html>
