@@ -1,3 +1,168 @@
-<h1 style="text-align: center;"><strong>POP MUSIC</strong></h1>
-<h1 style="text-align: center;"><strong>1.</strong></h1>
-<p style="text-align: center;"><iframe src="//www.youtube.com/embed/mrV8kK5t0V8" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST FOOD</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+
+        /* Main Container */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .instruction {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Vertical Grid Container */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+            gap: 15px;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+        /* Base Button Styling */
+        .btn {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* Brand Colors */
+        .aw { background-color: #007749; color: #fff; }
+        .bk { background-color: #ec1c24; color: #f2a900; border: 2px solid #f2a900; }
+        .cfa { background-color: #dd0031; color: #fff; }
+        .dominos { background-color: #006491; color: #fff; }
+        .kfc { background-color: #a3080c; color: #fff; }
+        .mcd { background-color: #ffbc0d; color: #222; }
+        .pizzahut { background-color: #ee3124; color: #fff; }
+        .popeyes { background-color: #f15a24; color: #fff; }
+        .subway { background-color: #008c44; color: #ffcb05; }
+        .tacobell { background-color: #702082; color: #fff; }
+        .timhortons { background-color: #c8102e; color: #fff; }
+        .wendys { background-color: #e21838; color: #fff; }
+
+        /* Footer Styling */
+        footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        /* Mobile Optimization for small screens */
+        @media (max-width: 480px) {
+            .button-grid {
+                grid-template-columns: 1fr; /* Drops to a single wide column on tiny screens */
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .btn {
+                padding: 18px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FAST FOOD</h1>
+    </header>
+
+    <main>
+        <p class="instruction">↓ Scroll down to view all restaurants ↓</p>
+        
+        <!-- Clean vertical layout -->
+        <div class="button-grid">
+            <a href="https://www.aw.ca/" target="_blank" class="btn aw">A&W</a>
+            <a href="https://www.bk.com/" target="_blank" class="btn bk">Burger King</a>
+            <a href="https://www.chick-fil-a.com/" target="_blank" class="btn cfa">Chick-fil-A</a>
+            <a href="https://www.dominos.com/" target="_blank" class="btn dominos">Domino's</a>
+            <a href="https://www.kfc.com/" target="_blank" class="btn kfc">KFC</a>
+            <a href="https://www.mcdonalds.com/" target="_blank" class="btn mcd">McDonald's</a>
+            <a href="https://www.pizzahut.com/" target="_blank" class="btn pizzahut">Pizza Hut</a>
+            <a href="https://www.popeyes.com/" target="_blank" class="btn popeyes">Popeyes</a>
+            <a href="https://www.subway.com/" target="_blank" class="btn subway">Subway</a>
+            <a href="https://www.tacobell.com/" target="_blank" class="btn tacobell">Taco Bell</a>
+            <a href="https://www.timhortons.ca/" target="_blank" class="btn timhortons">Tim Hortons</a>
+            <a href="https://www.wendys.com/" target="_blank" class="btn wendys">Wendy's</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tapfone &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
